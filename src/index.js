@@ -11,7 +11,9 @@ const app = express()
             console.log("error",error)
             throw error
         })
-        app.listen(process.env.PORT,)
+        app.listen(process.env.PORT,()=>{
+            console.log(   `app is listening on port ${process.env.PORT}`)
+        })
 
         
     } catch (error) {

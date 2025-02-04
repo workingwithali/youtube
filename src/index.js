@@ -9,6 +9,10 @@ dotenv.config({ path: './env' })
 
 
 connectDB()
+.then()
+.catch((err)=>{
+    console.log("Mongo db connection fail !!!!",err)
+})
 
 
 

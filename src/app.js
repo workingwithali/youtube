@@ -10,7 +10,8 @@ const corsOptions = {
     methods: 'GET,POST',           // Allow only GET and POST methods
     allowedHeaders: 'Content-Type,Authorization' // Allow only specific headers
 };
-app.use(cors())
+app.use(cors(corsOptions))
+app.
 
 
 

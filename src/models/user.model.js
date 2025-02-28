@@ -36,7 +36,16 @@ const UserSchema = new Schema(
                 ref: "video"
             }
         ],
-        
+        password:{
+            type:string,
+            reqired:[true,"password is reqired"]
+        },
+        refreshToken:{
+            type:string
+        }
+    },
+    {
+        timestamps:true
     }
 )
 export const User = mongoose.model('User', UserSchema)

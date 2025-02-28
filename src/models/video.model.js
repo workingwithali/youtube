@@ -1,6 +1,6 @@
 import mongoose , {Schema} from 'mongoose'
 
-const UserSchema = new Schema({
+const VideoSchema = new Schema({
 
 })
- export const User = mongoose.model('User',UserSchema)
+ export const Video = mongoose.model('Video',VideoSchema)

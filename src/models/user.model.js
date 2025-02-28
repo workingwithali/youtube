@@ -23,6 +23,20 @@ const UserSchema = new Schema(
             trime:true,
             index:true,
         },
+        avatar:{
+            type:string, // cloudinary url
+            required: true,
+        },
+        coverimage:{
+            type:string, // cloudinary url
+        },
+        watchHistory:[
+            {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: "video"
+            }
+        ],
+        
     }
 )
 export const User = mongoose.model('User', UserSchema)
